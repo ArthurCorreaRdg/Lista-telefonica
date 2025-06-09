@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./main.css">
+    <title>Agenda de Contatos</title>
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <img src="./images/agenda.png" alt="Icone de agenda telefônica">
+            <h1>Agenda de Contatos</h1>
+        </header>
+        <form id="form-contato">
+            <img src="./images/pessoa.png" alt="Icone do Nome">
+            <input type="text" id="nome" required placeholder="Nome">
+            <img src="./images/telefone.png" alt="Icone do Telefone">
+            <input type="tel" id="telefone" required placeholder="(11) 98765-4321">
+            <img src="./images/o-email.png" alt="Icone do Nome">
+            <input type="text" id="email" placeholder="Email - Opcional">
+            <button type="submit">Adicionar</button>
+        </form>
+
+        <input type="text" id="pesquisar" placeholder="Procurar por nome">
+
+        <table cellspacing="0">
+            <thead>
+                <tr>
+                    <th>Nome do Contato</th>
+                    <th>Número</th>
+                    <th>Email</th>
+                    <th>Ações</th>
+                </tr>
+            </thead>
+            <tbody id="lista-contatos">
+            </tbody>
+        </table>
+    </div>
+
+    <script src="./main.js"></script>
+</body>
+</html>

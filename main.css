@@ -1,0 +1,139 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+body, html {
+    height: 100%;
+    background-color: #f0f2f5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.container {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 600px;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+header img {
+    width: 50px;
+    vertical-align: middle;
+}
+
+header h1 {
+    display: inline-block;
+    margin-left: 10px;
+    font-size: 1.5rem;
+}
+
+form {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 20px;
+    align-items: center;
+}
+
+form img {
+    width: 24px;
+}
+
+form input {
+    flex: 1 1 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+}
+
+form button {
+    flex: 1 1 100%;
+    padding: 10px;
+    background-color: #40db02d5;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+form button:hover {
+    background-color: #237203d5;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    text-align: left;
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+/* Botão estilo ícone */
+.botao-icon {
+    background-color: #32cd32;
+    color: white;
+    border: none;
+    padding: 6px;
+    margin: 0 4px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    width: 28px;
+    height: 28px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background 0.3s;
+}
+
+.botao-icon:hover {
+    background-color: #28a428;
+}
+
+/* Mantém as células sem quebrar linha */
+#lista-contatos td {
+    white-space: nowrap;
+    vertical-align: middle;
+}
+
+/* Coluna de ações empilhadas */
+.acoes {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4px;
+}
+
+tfoot input, tfoot button {
+    padding: 8px;
+    width: 100%;
+    margin-top: 10px;
+    box-sizing: border-box;
+}
+
+@media (max-width: 480px) {
+    header h1 {
+        display: block;
+        margin: 10px 0 0;
+    }
+
+    form input, form button {
+        flex: 1 1 100%;
+    }
+}
